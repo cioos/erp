@@ -1,10 +1,10 @@
-package com.cisoos.erp.dao.vo;
+package com.cisoos.erp.dao.pojo;
 
-import com.fasterxml.jackson.databind.annotation.JsonAppend;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Getter
@@ -40,9 +40,9 @@ public class PlatformWarehouseProductUser {
     @Column(name = "status")
     private Integer status;
     @Column(name = "dyn_prod_cost")
-    private double dynProdCost;
+    private BigDecimal dynProdCost;
     @Column(name = "ship_head_fee")
-    private double shipHeadFee;
+    private BigDecimal shipHeadFee;
     @Column(name = "charge_user_id")
     private Integer chargeUserId;
     @Column(name = "create_time")
