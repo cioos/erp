@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 @Setter
 @ToString
 @Table(name = "platform_warehouse_product_user")
-public class PlatformWarehouseProductUser {
+public class PWPUvo {
     @Id
     @Column(name = "id")
     private Integer id;

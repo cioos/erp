@@ -1,7 +1,7 @@
 package com.cisoos.erp;
 
 import com.cisoos.erp.dao.IPWPUdao;
-import com.cisoos.erp.dao.pojo.PlatformWarehouseProductUser;
+import com.cisoos.erp.dao.pojo.PWPUvo;
 import com.cisoos.erp.service.IPWPUService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,17 +28,17 @@ public class Hellotest {
 
     @ResponseBody
     @RequestMapping("hellotest")
-    public List<PlatformWarehouseProductUser> hello() {
-        List<PlatformWarehouseProductUser> ap = (List<PlatformWarehouseProductUser>) ipwpuService.getAllPlatformWarehouseProductUser();
-        for (PlatformWarehouseProductUser a1 : ap) System.out.println(a1);
+    public List<PWPUvo> hello() {
+        List<PWPUvo> ap = (List<PWPUvo>) ipwpuService.getAllPlatformWarehouseProductUser();
+        for (PWPUvo a1 : ap) System.out.println(a1);
         return ap;
     }
 
     @ResponseBody
-    @RequestMapping("hellotestuw")
-    public List<PlatformWarehouseProductUser> helloa(HttpServletRequest request) {
-        List<PlatformWarehouseProductUser> ap = (List<PlatformWarehouseProductUser>) ipwpuService.getByUidAndWid(Integer.valueOf(request.getParameter("Uid")),Integer.valueOf(request.getParameter("Wid")) );
-        for (PlatformWarehouseProductUser a1 : ap) System.out.println(a1);
+    @RequestMapping("uw")
+    public List<PWPUvo> helloa(HttpServletRequest request) {
+        List<PWPUvo> ap = (List<PWPUvo>) ipwpuService.getByUidAndWid(Integer.valueOf(request.getParameter("Uid")),Integer.valueOf(request.getParameter("Wid")) );
+        for (PWPUvo a1 : ap) System.out.println(a1);
         return ap;
     }
 }

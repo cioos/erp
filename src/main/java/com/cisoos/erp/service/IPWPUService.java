@@ -1,10 +1,8 @@
 package com.cisoos.erp.service;
-import  com.cisoos.erp.dao.pojo.PlatformWarehouseProductUser;
-
-import java.util.List;
+import com.cisoos.erp.dao.pojo.PWPUvo;
 
 public interface IPWPUService {
-    Iterable<PlatformWarehouseProductUser> getAllPlatformWarehouseProductUser();
-    Iterable <PlatformWarehouseProductUser> getByUidAndWid(Integer Uid,Integer Wid);
+    Iterable<PWPUvo> getAllPlatformWarehouseProductUser();
+    Iterable <PWPUvo> getByUidAndWid(Integer Uid, Integer Wid);
 
 }
