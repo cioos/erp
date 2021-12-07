@@ -1,7 +1,7 @@
 package com.cisoos.erp.service.impl;
 
 import com.cisoos.erp.dao.IPWPUdao;
-import com.cisoos.erp.dao.pojo.PWPUvo;
+import com.cisoos.erp.dao.vo.PWPUvo;
 import com.cisoos.erp.service.IPWPUService;
 import org.springframework.stereotype.Service;
 

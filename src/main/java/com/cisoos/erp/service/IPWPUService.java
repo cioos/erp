@@ -1,5 +1,5 @@
 package com.cisoos.erp.service;
-import com.cisoos.erp.dao.pojo.PWPUvo;
+import com.cisoos.erp.dao.vo.PWPUvo;
 
 public interface IPWPUService {
     Iterable<PWPUvo> getAllPlatformWarehouseProductUser();

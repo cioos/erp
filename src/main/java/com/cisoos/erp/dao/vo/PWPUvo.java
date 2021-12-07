@@ -1,14 +1,19 @@
-package com.cisoos.erp.dao.pojo;
+package com.cisoos.erp.dao.vo;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 import lombok.ToString;
-import javax.persistence.*;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.math.BigDecimal;
 
+/***
+ * 个人负责库存表系统公用为个人id 0
+ */
 @Entity
-@Getter
-@Setter
+@Data
 @ToString
 @Table(name = "platform_warehouse_product_user")
 public class PWPUvo {

@@ -1,6 +1,6 @@
 package com.cisoos.erp.dao;
 
-import com.cisoos.erp.dao.pojo.PWPUvo;
+import com.cisoos.erp.dao.vo.PWPUvo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

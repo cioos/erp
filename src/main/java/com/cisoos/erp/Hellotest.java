@@ -1,7 +1,7 @@
 package com.cisoos.erp;
 
 import com.cisoos.erp.dao.IPWPUdao;
-import com.cisoos.erp.dao.pojo.PWPUvo;
+import com.cisoos.erp.dao.vo.PWPUvo;
 import com.cisoos.erp.service.IPWPUService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
